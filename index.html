@@ -1,0 +1,129 @@
+REGISTRATION PAGE CODE :
+<html>
+ <head>
+<title> Registration form </title> 
+<style>
+    body{
+        background-image: url("https://c0.wallpaperflare.com/preview/932/260/985/bible-biblia-book-book-bindings.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        padding: 5px;
+    }
+    .register{
+           box-shadow:10px color(rgba(9, 157, 26, 0.07));
+           height: 25px;
+           width: 100px;
+           margin: 10px;
+           border-radius: 10px;
+           background-color: red;
+           font-weight: bold;
+           color: white;
+
+    }
+    .register:hover
+    {
+        background-color: rgb(79, 10, 10);
+    }
+    #sheet{
+        background-color:rgb(91, 88, 88);
+        border-radius: 10px;
+        padding: 3px;
+        width: 180px;
+    }
+</style>
+</head>
+<section>
+<body align="center" bgcolor="white">
+<h1 style="color: black;"> REGISTRATION FORM </h1><br><br>
+<fieldset>
+<legend style="color: black;"> Personal Information </legend>
+<form action="Login1.html" target="self"  required>
+<label for= "fname"> First Name </label>
+<input type="text" id="fname" name="fname" required>
+
+<label for= "mname"> Middle Name </label>
+<input type="text" id="mname" name="mname">
+
+<label for ="lname"> Last Name </label>
+<input type="text" id="lname" name="lname"><br><br>
+
+<label for=faname> Father's Name <label>
+<input type="text" id="faname" name="faname"required><br><br>
+
+<label for="moname"> Mother's Name</label>
+<input type="text" id="moname" name="moname"><br><br>
+
+<label > Gender </label> 
+<input type="radio" id="male" name="gender" >
+<label for="male"> MALE </label>
+<input type="radio" id="female" name="gender">
+<label for="female"> FEMALE <label>
+<br><br>
+<label for="dob"> DATE OF BIRTH </label>
+<input type="date" id="dob" name="dob" required><br><br> 
+<label> COURSE </label><br><br>
+ <div class="program-selection">
+                <h2 style="color: black;">Program Selection</h2>
+                <div class="form-group">
+                    <label for="program">Select Program:</label>
+                    <select id="program" name="program" required>
+                        <option value="computer-science">Computer Science and Engineering</option>
+                        <option value="engineering">Mechanical Engineering</option>
+                        <option value="biology">Civil Engineering</option>
+                        <option value="business">Electrical Engineering</option>
+                    </select><br><br>
+                </div>
+            </div>
+  <div class="form-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+</fieldset>
+ <fieldset>
+    <legend style="color: black;">Plaese fill this properly</legend>
+    Username : 
+    <input type="username" name="username" id="username"><br> <br>
+    Email:
+    <input type="email" name="email" id="email"><br><br>
+                Age :
+                <input type="Number" name="Number" min="18" max="40"><br><br>
+                Phone Number :
+                <input type="Number" name="Phone"><br><br>
+                Password :
+                <input type="password" name="pasword"><br><br>
+                Confirm Password :
+                <input type="password" name="password"><br><br>
+                <label for="photo">Personal A4 size photo </label>
+<input type="file" id="sheet" name="photo" accept=".pdf, .doc, .docx .jpg" required><br><br>
+    country :
+    <select name="" id="">
+       <option value="india">India</option>
+       <option value="Pakistan">Pakistan</option>
+       <option value="South Africa">South Africa</option>
+       <option value="U.S.A">U.S.A</option>
+       <option value="United state">United state</option>
+       <option value="Afganistan">Afganistan</option>
+       <option value=" Sri lanka">Sri Lanka</option>
+       <option value="China">China</option>
+    </select><br><br>
+ </fieldset>
+  <fieldset>
+ <legend style="color: black;"> Some Extra information </legend> 
+ <label for="marks" > 12th Marks  CGPA/Percentage </label>
+ <input type="text" id="marks" name="marks"><br><br>
+<label for="mark" > degree Marks CGPA/Percentage </label>
+ <input type="text" id="mark" name="mark"> <br><br> 
+<label for ="Aadhar" > Adhar card no. </label> 
+<input type ="text" id="Aadhar" name="Aadhar"><br><br>
+<label for="sheet">MCA Marksheet</label>
+<input  type="file" id="sheet" name="sheet" accept=".pdf, .doc, .docx , .jpg" required>
+<ul>
+    <li> Note : Documnets must should be on .docx  .pdf .doc .jpg  File  </li>
+</ul>
+</fieldset> 
+<input class="register" type="submit" value="Register"> 
+</form>
+</section>
+</body>
+ </html>
